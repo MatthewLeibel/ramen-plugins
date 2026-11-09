@@ -1,6 +1,6 @@
 # RAMen Memory for Claude
 
-RAMen Memory gives Claude one memory that follows you across Claude and ChatGPT, your devices and your other AI apps.
+RAMen Memory gives Claude one memory that follows you across Claude's apps, your devices and your local AI (ChatGPT next).
 While you chat, Claude saves the lasting things you tell it (your people, your work, your rules and how you like
 things) and looks them up when they matter, so you stop explaining yourself again in every new chat. When something
 changes, the newer note wins, and when the memory has nothing, Claude says so instead of guessing.
@@ -13,8 +13,13 @@ In Claude Code:
 
     /plugin install ramen-memory --marketplace MatthewLeibel/ramen-plugins
 
-Then connect it once and sign in with your RAMen Pro license key (get one at https://getramenai.com/#pricing). In
-claude.ai and the Claude apps, RAMen Memory also appears under Settings > Connectors.
+Then connect it once and sign in with your RAMen Pro license key (get one at https://getramenai.com/#pricing).
+
+In claude.ai and the Claude desktop and phone apps, add it as a custom connector instead: Settings > Customize >
+Connectors > Add > Add custom connector, with the address https://ramen-online.matthewsleibel.workers.dev/mcp. Then
+add the one line from https://getramenai.com/#online-setup to Settings > Your Claude > Instructions: without it,
+Claude uses its own memory unless you name RAMen; with it, Claude checks RAMen before answering anything about you
+and saves what you tell it, in every chat (we tried both on claude.ai).
 
 ## What it does
 
@@ -23,8 +28,8 @@ claude.ai and the Claude apps, RAMen Memory also appears under Settings > Connec
 - `remember`: saves a lasting fact you tell Claude, in your words.
 - `forget`: deletes what you ask Claude to forget.
 - `memory_status`: says how much is kept and which computers are linked.
-- The skill tells Claude when to use them: before answering anything that depends on you, and when you share
-  something it should keep.
+- In Claude Code, the skill tells Claude when to use them: before answering anything that depends on you, and when
+  you share something it should keep. In claude.ai, the line in your instructions does that.
 
 ## What it sends and where
 
