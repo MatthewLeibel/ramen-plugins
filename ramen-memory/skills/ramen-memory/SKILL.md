@@ -1,6 +1,6 @@
 ---
 name: ramen-memory
-description: Use the person's own RAMen Memory whenever an answer depends on them (their family, work, projects, rules, preferences, or anything they told an AI before), and save lasting facts they share. One memory shared across Claude, ChatGPT and their other AI apps.
+description: Use the person's own RAMen Memory whenever an answer depends on them (their family, work, projects, rules, preferences, or anything they told an AI before), save lasting facts they share, and save or continue long work as a RAMen thread so it goes on in a fresh session or another app. One memory shared across Claude, ChatGPT and their other AI apps.
 ---
 
 # RAMen Memory
@@ -28,10 +28,22 @@ Call `remember` when the person asks you to remember something, or tells you a l
 would expect you to know next time (a new address, a new routine, a name). Save one clear sentence in their words.
 RAMen learns it during its next `ramen sleep`.
 
+## save_thread, resume_thread, recall_thread (RAMen Endless)
+
+A long session re-reads everything said so far on every turn. When the person wants to go on in a fresh session or in
+another app (Claude, ChatGPT, Codex, any app with RAMen Memory), or the session has grown long, call `save_thread`
+with where the work stands: the goal, the values that can change (with what they were before), the facts, the
+decisions and why, what is still open, and the latest version of everything you wrote together, word for word. Then
+tell them to start fresh and say "Continue my RAMen thread" with its name.
+
+When a session starts with "continue my RAMen thread ..." or asks to pick up earlier work, call `resume_thread` and go
+on from it as if it were this session. For a draft's full text or a detail it does not show, call `recall_thread`.
+Saving again under the same name updates the thread: values change and keep what they were, the open list is replaced.
+
 ## forget
 
 Call `forget` when the person asks you to forget something. Pass a few words the notes contain, and tell them what
-was deleted.
+was deleted. To delete a saved thread, pass `thread: ` and its name.
 
 ## memory_status
 
