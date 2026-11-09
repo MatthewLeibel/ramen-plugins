@@ -1,0 +1,21 @@
+{
+  "name": "ramen-memory",
+  "displayName": "RAMen Memory",
+  "version": "1.4.0",
+  "description": "One memory for Claude and ChatGPT: Claude saves what you tell it and looks it up when it matters, across chats, devices and apps. The newest fact holds, and you can delete anything.",
+  "author": {
+    "name": "RAMen",
+    "email": "support@getramenai.com",
+    "url": "https://getramenai.com"
+  },
+  "homepage": "https://getramenai.com",
+  "repository": "https://github.com/MatthewLeibel/ramen-plugins",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "personal-memory",
+    "local-ai",
+    "privacy",
+    "llama-cpp"
+  ]
+}

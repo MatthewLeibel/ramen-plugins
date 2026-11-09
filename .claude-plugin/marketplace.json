@@ -1,0 +1,17 @@
+{
+  "name": "ramen",
+  "owner": {
+    "name": "RAMen",
+    "email": "support@getramenai.com"
+  },
+  "metadata": {
+    "description": "RAMen's plugins: your own memory for Claude, kept on your computer."
+  },
+  "plugins": [
+    {
+      "name": "ramen-memory",
+      "source": "./ramen-memory",
+      "description": "Your own memory for Claude, kept on your computer: Claude asks what RAMen learned about you and saves new things for it to learn."
+    }
+  ]
+}
