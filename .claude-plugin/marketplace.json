@@ -5,13 +5,13 @@
     "email": "support@getramenai.com"
   },
   "metadata": {
-    "description": "RAMen's plugins: your own memory for Claude, kept on your computer."
+    "description": "RAMen's plugins: your own memory for Claude, kept in your RAMen account online and shared with your other AI apps."
   },
   "plugins": [
     {
       "name": "ramen-memory",
       "source": "./ramen-memory",
-      "description": "Your own memory for Claude, kept on your computer: Claude asks what RAMen learned about you and saves new things for it to learn."
+      "description": "Your own memory for Claude, kept in your RAMen account online (and on your own computer only if you link RAMen Desktop): Claude looks up what you told it before and saves the lasting things you tell it."
     }
   ]
 }

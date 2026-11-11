@@ -18,15 +18,22 @@ before, for example:
 - their rules and preferences ("in my usual format", "the way I like it", units, things to leave out)
 - anything that refers back ("as I said", "like last time", "my starter")
 
-Pass their question in their own words. Use what comes back as what you know about them. When it answers "You haven't
-told me that", say you don't know rather than guess, and ask. When two things it returns disagree, the later one is
-what holds now.
+Pass their question in their own words. Use what comes back as what you know about them. It starts with their
+must-know facts (an allergy, a medicine, a diet, where they live), whatever the question: keep each one in mind
+whenever it changes the right answer, and don't bring up the others. When it finds no note, the words may only
+differ: try a shorter or different search, or ask them. Don't guess, and don't tell them they never said it. When
+two things it returns disagree, the later one is what holds now.
 
 ## remember
 
 Call `remember` when the person asks you to remember something, or tells you a lasting fact about themselves that they
-would expect you to know next time (a new address, a new routine, a name). Save one clear sentence in their words.
-RAMen learns it during its next `ramen sleep`.
+would expect you to know next time (a new address, a new routine, a name). Save one clear sentence, and pass their
+exact words as `quote` so the note keeps its receipt. Something you worked out yourself rather than heard from them
+goes with `inferred: true`: it waits for their OK on the RAMen page before it is used. How they want answers (short,
+plain words, a name to call them) goes with `profile: true` onto their profile card, which every app reads first.
+When they ask that every AI always keep something in mind (an allergy, a medicine, a hard limit), pass `must: true`
+too: it becomes one of their must-know facts (up to 12), which recall always gives.
+RAMen learns notes during its next `ramen sleep` too.
 
 ## save_thread, resume_thread, recall_thread (RAMen Endless)
 
@@ -37,8 +44,12 @@ decisions and why, what is still open, and the latest version of everything you 
 tell them to start fresh and say "Continue my RAMen thread" with its name.
 
 When a session starts with "continue my RAMen thread ..." or asks to pick up earlier work, call `resume_thread` and go
-on from it as if it were this session. For a draft's full text or a detail it does not show, call `recall_thread`.
-Saving again under the same name updates the thread: values change and keep what they were, the open list is replaced.
+on from it as if it were this session. For a draft's full text or a detail it does not show, call `recall_thread`;
+without a thread name it searches every thread and note and says where each answer came from. Saving again under the
+same name updates the thread: values change and keep what they were. Pass `done` with the open items finished, and
+`project` to group threads ("load my wedding project" is `resume_thread` with `project`). "What's still open?" is
+`resume_thread` with `open: true`. When the person's RAMen asks for checkpoints, save a long session about every 15
+messages with `checkpoint: true`, without asking.
 
 ## forget
 
@@ -47,9 +58,10 @@ was deleted. To delete a saved thread, pass `thread: ` and its name.
 
 ## memory_status
 
-Call `memory_status` when they ask what RAMen knows or whether it is set up.
+Call `memory_status` when they ask what RAMen knows or whether it is set up. It starts with their profile card. To
+change a RAMen setting they ask for ("turn off checkpoints", "stop saving health notes"), pass `settings`.
 
 ## When it is not there
 
 If the tools are missing or ask the person to connect, tell them to connect RAMen Memory in their connectors and sign
-in with their RAMen Pro license key (https://getramenai.com/#pricing).
+in with their RAMen license key (RAMen Free or Pro: https://getramenai.com/#plans).

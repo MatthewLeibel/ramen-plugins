@@ -1,7 +1,7 @@
 {
   "name": "ramen-memory",
   "displayName": "RAMen Memory",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "One memory for Claude and ChatGPT: Claude saves what you tell it and looks it up when it matters, across chats, devices and apps. The newest fact holds, and you can delete anything.",
   "author": {
     "name": "RAMen",
