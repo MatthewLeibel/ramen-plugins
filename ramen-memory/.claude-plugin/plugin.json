@@ -19,5 +19,8 @@
     "mcp"
   ],
   "icon": ".claude-plugin/icon.png",
-  "privacyPolicyUrl": "https://getramenai.com/privacy.html"
+  "privacyPolicyUrl": "https://getramenai.com/privacy.html",
+  "supportUrl": "https://getramenai.com/support.html",
+  "documentationUrl": "https://getramenai.com/how-it-works.html",
+  "termsOfServiceUrl": "https://getramenai.com/terms.html"
 }
