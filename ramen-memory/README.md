@@ -55,5 +55,5 @@ and saves what you tell it, in every chat (we tried both on claude.ai).
 
 ## Privacy and support
 
-Privacy policy: https://getramenai.com/privacy.html. Terms: https://getramenai.com/terms.html. Questions:
+Privacy policy: https://getramenai.com/privacy.html Terms: https://getramenai.com/terms.html. Questions:
 support@getramenai.com.

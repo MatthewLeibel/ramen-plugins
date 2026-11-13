@@ -1,8 +1,8 @@
 {
   "name": "ramen-memory",
   "displayName": "RAMen Memory",
-  "version": "1.6.0",
-  "description": "One memory for Claude and ChatGPT: Claude saves what you tell it and looks it up when it matters, across chats, devices and apps. The newest fact holds, and you can delete anything.",
+  "version": "1.6.1",
+  "description": "One memory for Claude, ChatGPT and your other AI apps: Claude saves what you tell it and looks it up when it matters, and long chats continue in a fresh one on far fewer tokens. The newest fact holds, and you can delete anything.",
   "author": {
     "name": "RAMen",
     "email": "support@getramenai.com",
@@ -14,8 +14,10 @@
   "keywords": [
     "memory",
     "personal-memory",
-    "local-ai",
-    "privacy",
-    "llama-cpp"
-  ]
+    "long-chats",
+    "tokens",
+    "mcp"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://getramenai.com/privacy.html"
 }
